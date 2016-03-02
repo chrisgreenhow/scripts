@@ -11,8 +11,8 @@ GPIO.setup(led_pin2, GPIO.OUT)
 GPIO.setup(led_pin3, GPIO.OUT)
 
 try:
+    print("LEDs ON")
     while True:
-        print("LEDs ON")
         GPIO.output(led_pin1, True)
         GPIO.output(led_pin2, True)
         GPIO.output(led_pin3, True)
