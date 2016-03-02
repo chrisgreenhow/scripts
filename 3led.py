@@ -14,7 +14,9 @@ try:
     print("LEDs ON")
     while True:
         GPIO.output(led_pin1, True)
+        time.sleep(1)
         GPIO.output(led_pin2, True)
+        time.sleep(1)
         GPIO.output(led_pin3, True)
 finally:  
     print("LEDs OFF")
